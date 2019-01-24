@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Black_jack2</string>
+    <string name="yBtn">OUI</string>
+    <string name="nBtn">NON</string>
+    <string name="play">Commencer la partie</string>
+    <string name="Validate">Valider</string>
+    <string name="mise">Combien tu veux miser</string>
+    <string name="pioche">Pioche</string>
+    <string name="nbr_mise">100€</string>
+    <string name="Couche">Couche</string>
+    <string name="title_activity_init">SélectionJoueurs</string>
+    <string name="initjoueur">Entrer le nom du Joueur</string>
+    <string name="Validatej">Valider joueur</string>
+    <string name="notice">Notice :  -Pour initialiser les joueurs entrer le nom et la bourse d’un joueur, puis valider grâce au bouton “Valider Joueur”.\n Chaque joueur joue son tour après l’autre il peut : \n  -Piocher et miser grâce à la barre de progression et au bouton Pioche.\n -Se coucher grâce au bouton “Couche” \n La partie se terminera quand tous les joueurs seront soit perdant ou couché.</string>
+</resources>

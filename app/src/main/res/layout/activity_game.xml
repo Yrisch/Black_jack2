@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LogicGame">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/table"
+        android:gravity="center"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="0dp"
+        tools:ignore="MissingConstraints">
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="300dp"
+            android:layout_height="200dp"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="8dp">
+
+            <SeekBar
+                android:id="@+id/mis_bar"
+                style="@style/Widget.AppCompat.SeekBar"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="10dp"
+                android:layout_alignParentLeft="true"
+                tools:ignore="RtlCompat" />
+
+            <TextView
+                android:id="@+id/text_bourse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/mis_bar"
+                android:layout_alignParentRight="true"
+                android:background="@color/white"
+                android:text="@string/nbr_mise"
+                android:textColor="@color/colorPrimary"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/textMain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/mis_bar"
+                android:layout_marginTop="20dp"
+                android:background="@color/white"
+                android:text="@string/mise"
+                android:textColor="@color/colorPrimary"
+                android:textSize="20dp" />
+
+            <Button
+                android:id="@+id/coucheBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:text="@string/Couche"
+                android:textColor="@color/colorPrimary"
+                android:layout_alignParentRight="true"
+                tools:ignore="RtlCompat" />
+
+            <ImageButton
+                android:id="@+id/pioche"
+                android:layout_width="70dp"
+                android:layout_height="100dp"
+                android:layout_below="@+id/textMain"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="100dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="14dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/carte_dos" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/pioche"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="-79dp"
+                android:layout_marginBottom="44dp"
+                android:background="@color/white"
+                android:text="Pioche"
+                android:textColor="@color/colorPrimary"
+                android:textSize="20dp" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
